@@ -103,6 +103,8 @@ public:
 	}
 
 
+
+
 protected:
 	T* m_buffer;
 	int counter;
@@ -123,6 +125,25 @@ template <typename T> T DoStuff(T& r)
 }
 
 void Testing();
+
+template <typename T> void BubbleSort(T* rhs, int sizeT)
+{
+	bool swapped = false;
+	do {
+		swapped = false;
+		for (int i = 0; i < sizeT -1; i++)
+		{
+			if (rhs[i] > rhs[i + 1])
+			{
+				int tmp = rhs[i];
+				rhs[i] = rhs[i + 1];
+				rhs[i + 1] = tmp;
+				swapped = true;
+			}
+		}
+	} while (swapped != false);
+}
+
 
 
 #endif // !VECTOR.H

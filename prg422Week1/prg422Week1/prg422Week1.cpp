@@ -14,19 +14,30 @@
 std::string changeNames(std::string& s);
 std::string changNamesBetter(std::string& s);
 
+void UnitTest_Bubble_Sort()
+{
+	int tmpArray[] = { 10, 5, 7, -1, 0, 4 };
+	BubbleSort(tmpArray, 6);
+	for (int i = 0; i < 6; i++)
+	{
+		std::cout << tmpArray[i] << std::endl;
+	}
+}
+
 int main()
 {
-	
+	/*
 	String s("Anthony Searles");
 	String x("760.637.4471");
 	x.UnitTest();
 	Fraction <int> m;
-	m.UnitTest();
+	m.UnitTest();*/
 	//std::cout<<x.Split("4");
 	//std::cout << x.FindFirstOccurence('4');
 	//Vector<int>::Unit_Test();
-	std::cout << s << std::endl;
+	//std::cout << s << std::endl;
 
+	UnitTest_Bubble_Sort();
 	
 	//Vector <int> v;
 	//for (int i = 0; i < 30; i++)
@@ -69,4 +80,6 @@ std::string changNamesBetter(std::string& s)
 	s = "Anthony";
 	return s;
 }
+
+
 
