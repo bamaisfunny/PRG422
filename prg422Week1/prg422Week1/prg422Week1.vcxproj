@@ -139,8 +139,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A.h" />
+    <ClInclude Include="EllieTest.h" />
     <ClInclude Include="Fractions.h" />
+    <ClInclude Include="Freedom.h" />
+    <ClInclude Include="Int.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="MyString.hpp" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="Student.h" />
@@ -149,6 +154,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A.cpp" />
+    <ClCompile Include="EllieTest.cpp" />
+    <ClCompile Include="Int.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="Murica.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="prg422Week1.cpp" />
     <ClCompile Include="Student.cpp" />

@@ -15,5 +15,7 @@ protected: std::string m_FirstName;
 		   int m_NumberGrades;
 		   
 };
+void reverseString(const char* c_str);
+void capString(const char* c_str);
 #endif // ! PERSON_H
 

@@ -1,9 +1,18 @@
 ﻿  prg422Week1.cpp
-c:\users\admina\documents\github\prg422\prg422week1\prg422week1\prg422week1.cpp(66): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\admina\documents\github\prg422\prg422week1\prg422week1\prg422week1.cpp(87): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
-  VectorTest.cpp
-  Student.cpp
-  Person.cpp
-  Generating Code...
-  prg422Week1.vcxproj -> C:\Users\AdminA\Documents\GitHub\PRG422\prg422Week1\Debug\prg422Week1.exe
-  prg422Week1.vcxproj -> C:\Users\AdminA\Documents\GitHub\PRG422\prg422Week1\Debug\prg422Week1.pdb (Partial PDB)
+c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(55): error C2228: left of '.m_payload' must have class/struct/union
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(55): note: type is 'Int *'
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(55): note: did you intend to use '->' instead?
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(52): note: while compiling class template member function 'void LinkedList<Int>::Insert_After(int,int)'
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(68): note: see reference to function template instantiation 'void LinkedList<Int>::Insert_After(int,int)' being compiled
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\prg422week1.cpp(43): note: see reference to class template instantiation 'LinkedList<Int>' being compiled
+c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(57): error C2228: left of '.m_next' must have class/struct/union
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(57): note: type is 'Int *'
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(57): note: did you intend to use '->' instead?
+c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(59): error C2228: left of '.m_next' must have class/struct/union
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(59): note: type is 'Int *'
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(59): note: did you intend to use '->' instead?
+c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(60): error C2228: left of '.m_next' must have class/struct/union
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(60): note: type is 'Int *'
+  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(60): note: did you intend to use '->' instead?

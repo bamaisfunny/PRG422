@@ -10,9 +10,15 @@
 #include "Student.h"
 #include "Vector.h"
 #include "Fractions.h"
+#include "Freedom.h"
+#include "LinkedList.h"
+#include "EllieTest.h"
+
 
 std::string changeNames(std::string& s);
 std::string changNamesBetter(std::string& s);
+
+
 
 void UnitTest_Bubble_Sort()
 {
@@ -24,8 +30,19 @@ void UnitTest_Bubble_Sort()
 	}
 }
 
+
+
+void UnitTestString()
+{
+	reverseString("pineapple");
+	capString("pinEapple");
+}
+
 int main()
 {
+	LinkedList<Int> L;
+	L.Linked_Unit_Test();
+	//LinkedListUnitTest();
 	/*
 	String s("Anthony Searles");
 	String x("760.637.4471");
@@ -37,8 +54,12 @@ int main()
 	//Vector<int>::Unit_Test();
 	//std::cout << s << std::endl;
 
-	UnitTest_Bubble_Sort();
-	
+	/*UnitTest_Bubble_Sort();
+	UnitTestString();
+	Unit_Test_String();
+
+	Practice_Pointers();
+	*/
 	//Vector <int> v;
 	//for (int i = 0; i < 30; i++)
 	//{

@@ -33,3 +33,33 @@ void Person:: born()
 {
 	std::cout << "I was born" << std::endl;
 }
+void reverseString(const char* c_str)
+{
+	int length = strlen(c_str);
+	char* tmp = new char[length + 1];
+	for (int i = 0; i < length; i++)
+	{
+		tmp[length - i - 1] = c_str[i];
+	}
+	tmp[length] = 0;
+	std::cout << tmp << std::endl;
+}
+
+void capString(const char* c_str)
+{
+	int length = strlen(c_str);
+	char* tmp = new char[length + 1];
+	for (int i = 0; i < length; i++)
+	{
+		if (c_str[i] > 96 && c_str[i] < 123)
+		{
+			tmp[i] = c_str[i] - 32;
+		}
+		else
+		{
+			tmp[i] = c_str[i];
+		}
+	}
+	tmp[length] = 0;
+	std::cout << tmp << std::endl;
+}
