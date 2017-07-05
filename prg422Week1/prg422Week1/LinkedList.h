@@ -48,16 +48,22 @@ public:
 			Print_Linked_List(n->m_next);
 		}
 	}
-	void Insert_After(int value, int payload)
+	void Insert_After(int node, int payload, T* n)
 	{
-		T* node = new T(payload);
-		T* currentNode = tail;
-		while (currentNode.m_payload != value)
+		T *item = new T(payload);
+		n = tail;
+		int *ptr = &n;
+		while (ptr != n)
 		{
-			currentNode = currentNode.m_next;
+			n = n.m_next;
 		}
-		node.m_next = currentNode.m_next;
-		currentNode.m_next = node;
+		item.m_next = n.m_next;
+		n.m_next = item;
+	}
+	int getAddressOfNode(T node)
+	{
+		int *ptr = &node;
+		return ptr;
 	}
 	void Linked_Unit_Test()
 	{
@@ -65,7 +71,9 @@ public:
 		LL.AddNode(32);
 		LL.AddNode(6667);
 		LL.AddNode(57869);
-		Insert_After(6667, 52);
+		LL.Print_Linked_List(LL.tail);
+		int address = LL.getAddressOfNode(LL.tail);
+		LL.Insert_After(address, 789056, LL.tail);
 		LL.Print_Linked_List(LL.tail);
 	}
 
