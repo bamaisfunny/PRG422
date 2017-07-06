@@ -3,8 +3,29 @@
 #include<iostream>
 
 #define DEFAULT_CAP 10
-
+template <typename T> void BubbleSort(T* rhs, int sizeT)
+{
+	bool swapped = false;
+	do {
+		swapped = false;
+		for (int i = 0; i < sizeT - 1; i++)
+		{
+			if (rhs[i] > rhs[i + 1])
+			{
+				T tmp = rhs[i];
+				rhs[i] = rhs[i + 1];
+				rhs[i + 1] = tmp;
+				swapped = true;
+			}
+		}
+	} while (swapped != false);
+	for (int i = 0; i < sizeT; i++)
+	{
+		std::cout << rhs[i] << std::endl;
+	}
+}
 template <typename T> class Vector
+
 {
 public:
 	 Vector()
@@ -13,6 +34,10 @@ public:
 		 counter = 0;
 		 m_buffer = new T[DEFAULT_CAP];
 	}
+	 int getCounter()
+	 {
+		 return counter;
+	 }
 	void addElement(T x)
 	{
 		if (counter + 1 > capacity)
@@ -39,10 +64,10 @@ public:
 	{
 		return m_buffer[a];
 	}
-	virtual ~Vector()
-	{
-		delete []m_buffer;
-	}
+	//virtual ~Vector()
+	//{
+	//	//delete []m_buffer;
+	//}
 	Vector(const Vector& rhs)
 	{
 		capacity = rhs.capacity;
@@ -78,13 +103,30 @@ public:
 
 	static void Unit_Test(void)
 	{
-		Vector< int > v;
-		for( int i = 0; i < 20; i++ )
-		v.addElement(i);
-		//std::cout << v.Counter() << std::endl;
-		std::cout << v << std::endl;
+		//Vector< int > v;
+		//for( int i = 0; i < 20; i++ )
+		//v.addElement(i);
+		////std::cout << v.Counter() << std::endl;
+		//std::cout << v << std::endl;
+		//Vector<Int> v;
+		//for (int i = 20; i >= 0; i--)
+		//{
+		//	Int L(i);
+		//	v.addElement(L);
+		//}
+		//BubbleSort<Int>((Int*)(&v), v.getCounter());
+		//std::cout << v << std::endl;
+		int arr[] = { 5,6,7,1,2,3 };
+		BubbleSort<int>(arr, 6);
+		Int* v = new Int[5];
+		v[0].m_payload = -1;
+		v[1].m_payload = 10;
+		v[2].m_payload = 3;
+		v[3].m_payload = 7;
+		v[4].m_payload = -5;
+		BubbleSort<Int>(v, 5);
 	}
-
+			
 	void Copy(const Vector& rhs)
 	{
 		if (this == &rhs)
@@ -126,23 +168,7 @@ template <typename T> T DoStuff(T& r)
 
 void Testing();
 
-template <typename T> void BubbleSort(T* rhs, int sizeT)
-{
-	bool swapped = false;
-	do {
-		swapped = false;
-		for (int i = 0; i < sizeT -1; i++)
-		{
-			if (rhs[i] > rhs[i + 1])
-			{
-				int tmp = rhs[i];
-				rhs[i] = rhs[i + 1];
-				rhs[i + 1] = tmp;
-				swapped = true;
-			}
-		}
-	} while (swapped != false);
-}
+
 
 
 

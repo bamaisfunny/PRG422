@@ -1,15 +1,13 @@
-﻿  prg422Week1.cpp
+﻿  Person.cpp
+  Generating Code...
+  Compiling...
+  prg422Week1.cpp
 c:\users\admina\documents\github\prg422\prg422week1\prg422week1\prg422week1.cpp(87): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
-c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(75): error C2664: 'int LinkedList<Int>::getAddressOfNode(T)': cannot convert argument 1 from 'Int *' to 'Int'
-          with
-          [
-              T=Int
-          ]
-  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(75): note: No constructor could take the source type, or constructor overload resolution was ambiguous
-  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\linkedlist.h(69): note: while compiling class template member function 'void LinkedList<Int>::Linked_Unit_Test(void)'
-  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\prg422week1.cpp(44): note: see reference to function template instantiation 'void LinkedList<Int>::Linked_Unit_Test(void)' being compiled
-  c:\users\admina\documents\github\prg422\prg422week1\prg422week1\prg422week1.cpp(43): note: see reference to class template instantiation 'LinkedList<Int>' being compiled
+  VectorTest.cpp
+  Student.cpp
   Generating Code...
   Skipping... (no relevant changes detected)
-  LinkedList.cpp
+  Murica.cpp
+  prg422Week1.vcxproj -> C:\Users\AdminA\Documents\GitHub\PRG422\prg422Week1\Debug\prg422Week1.exe
+  prg422Week1.vcxproj -> C:\Users\AdminA\Documents\GitHub\PRG422\prg422Week1\Debug\prg422Week1.pdb (Partial PDB)

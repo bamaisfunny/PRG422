@@ -51,7 +51,7 @@ int main()
 	m.UnitTest();*/
 	//std::cout<<x.Split("4");
 	//std::cout << x.FindFirstOccurence('4');
-	//Vector<int>::Unit_Test();
+	Vector<int>::Unit_Test();
 	//std::cout << s << std::endl;
 
 	/*UnitTest_Bubble_Sort();
